@@ -14,8 +14,9 @@ def binarySearch(list1, lower, upper, target):
         print("Not in list")
         
 list1 = [1,2,3,4,5,6,7,8,9]
-target = 81
+target = 8
 lower = 0
 upper = len(list1)-1
 res = binarySearch(list1, lower, upper, target)
-print(res)
+if res is not None:
+    print(f"Found {list1[res]} at index {res}")
